@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{E01439F1-7CDB-49EB-B80C-1E35CDBBA6FD}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <RootNamespace>Scraper</RootNamespace>
     <AssemblyName>Scraper</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -68,7 +68,6 @@
     <Compile Include="Interfaces\IPageScraper.cs" />
     <Compile Include="Interfaces\IReader.cs" />
     <Compile Include="PageScraper.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reader.cs" />
   </ItemGroup>

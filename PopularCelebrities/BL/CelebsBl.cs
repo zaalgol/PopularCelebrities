@@ -25,7 +25,7 @@ namespace PopularCelebrities.BL
         {
             if (dbRepo.DataFileExist())
             {
-                return dbRepo.GetDataFromJsonFile("Celebrity");
+                return dbRepo.GetDataFromJsonFile(typeof(Celebrity).Name);
             }
             var initData = InitData();
             return await initData;
@@ -39,12 +39,12 @@ namespace PopularCelebrities.BL
 
         public IEnumerable<Celebrity> UpdateCelebrity(string name, Celebrity updatedItem)
         {
-            dbRepo.UpdateItem("Name", name, updatedItem);
+            dbRepo.UpdateItem(nameof(Celebrity.Name), name, updatedItem);
             return GetData().Result;
         }
         public IEnumerable<Celebrity> RemoveCelebrity(string celebName)
         {
-            dbRepo.RemoveItemFromJsonFile("Name", celebName);
+            dbRepo.RemoveItemFromJsonFile(nameof(Celebrity.Name), celebName);
             return GetData().Result;
         }
 

@@ -52,7 +52,6 @@ C:\Users\zaalg\source\repos\PopularCelebrities\PopularCelebrities\bin\Microsoft.
 C:\Users\zaalg\source\repos\PopularCelebrities\PopularCelebrities\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\zaalg\source\repos\PopularCelebrities\PopularCelebrities\bin\Model.dll
 C:\Users\zaalg\source\repos\PopularCelebrities\PopularCelebrities\bin\Newtonsoft.Json.dll
-C:\Users\zaalg\source\repos\PopularCelebrities\PopularCelebrities\bin\Scraper.exe
 C:\Users\zaalg\source\repos\PopularCelebrities\PopularCelebrities\bin\System.Net.Http.Formatting.dll
 C:\Users\zaalg\source\repos\PopularCelebrities\PopularCelebrities\bin\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\zaalg\source\repos\PopularCelebrities\PopularCelebrities\bin\System.Web.Helpers.dll
@@ -70,7 +69,6 @@ C:\Users\zaalg\source\repos\PopularCelebrities\PopularCelebrities\bin\WebGrease.
 C:\Users\zaalg\source\repos\PopularCelebrities\PopularCelebrities\bin\HtmlAgilityPack.dll
 C:\Users\zaalg\source\repos\PopularCelebrities\PopularCelebrities\bin\Model.pdb
 C:\Users\zaalg\source\repos\PopularCelebrities\PopularCelebrities\bin\Scraper.pdb
-C:\Users\zaalg\source\repos\PopularCelebrities\PopularCelebrities\bin\Scraper.exe.config
 C:\Users\zaalg\source\repos\PopularCelebrities\PopularCelebrities\bin\Newtonsoft.Json.xml
 C:\Users\zaalg\source\repos\PopularCelebrities\PopularCelebrities\bin\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\zaalg\source\repos\PopularCelebrities\PopularCelebrities\bin\System.Net.Http.Formatting.xml
@@ -97,3 +95,5 @@ C:\Users\zaalg\source\repos\PopularCelebrities\PopularCelebrities\obj\Debug\Popu
 C:\Users\zaalg\source\repos\PopularCelebrities\PopularCelebrities\bin\System.Web.Cors.dll
 C:\Users\zaalg\source\repos\PopularCelebrities\PopularCelebrities\bin\System.Web.Http.Cors.dll
 C:\Users\zaalg\source\repos\PopularCelebrities\PopularCelebrities\bin\System.Web.Http.Cors.xml
+C:\Users\zaalg\source\repos\PopularCelebrities\PopularCelebrities\bin\Scraper.dll
+C:\Users\zaalg\source\repos\PopularCelebrities\PopularCelebrities\bin\Scraper.dll.config

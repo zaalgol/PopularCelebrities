@@ -1,5 +1,3 @@
-C:\Users\zaalg\source\repos\PopularCelebrities\Scraper\bin\Debug\Scraper.exe.config
-C:\Users\zaalg\source\repos\PopularCelebrities\Scraper\bin\Debug\Scraper.exe
 C:\Users\zaalg\source\repos\PopularCelebrities\Scraper\bin\Debug\Scraper.pdb
 C:\Users\zaalg\source\repos\PopularCelebrities\Scraper\bin\Debug\HtmlAgilityPack.dll
 C:\Users\zaalg\source\repos\PopularCelebrities\Scraper\bin\Debug\log4net.dll
@@ -13,7 +11,6 @@ C:\Users\zaalg\source\repos\PopularCelebrities\Scraper\bin\Debug\Newtonsoft.Json
 C:\Users\zaalg\source\repos\PopularCelebrities\Scraper\obj\Debug\Scraper.csprojAssemblyReference.cache
 C:\Users\zaalg\source\repos\PopularCelebrities\Scraper\obj\Debug\Scraper.csproj.CoreCompileInputs.cache
 C:\Users\zaalg\source\repos\PopularCelebrities\Scraper\obj\Debug\Scraper.csproj.CopyComplete
-C:\Users\zaalg\source\repos\PopularCelebrities\Scraper\obj\Debug\Scraper.exe
 C:\Users\zaalg\source\repos\PopularCelebrities\Scraper\obj\Debug\Scraper.pdb
 C:\Users\zaalg\source\repos\PopularCelebrities\Scraper\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\zaalg\source\repos\PopularCelebrities\Scraper\bin\Debug\Unity.Abstractions.dll
@@ -21,3 +18,6 @@ C:\Users\zaalg\source\repos\PopularCelebrities\Scraper\bin\Debug\Unity.Container
 C:\Users\zaalg\source\repos\PopularCelebrities\Scraper\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\zaalg\source\repos\PopularCelebrities\Scraper\bin\Debug\Unity.Abstractions.pdb
 C:\Users\zaalg\source\repos\PopularCelebrities\Scraper\bin\Debug\Unity.Container.pdb
+C:\Users\zaalg\source\repos\PopularCelebrities\Scraper\bin\Debug\Scraper.dll.config
+C:\Users\zaalg\source\repos\PopularCelebrities\Scraper\bin\Debug\Scraper.dll
+C:\Users\zaalg\source\repos\PopularCelebrities\Scraper\obj\Debug\Scraper.dll
