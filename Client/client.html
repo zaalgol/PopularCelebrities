@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!--<link rel="stylesheet" type="text/css" href="myStyle.css" />-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            var baseUrl = "https://localhost:44386";
+
+            $("#button-id").click(function () {
+                getCelebsFromServer("reset");
+            });
+
+            $(document).on('click', '.delete-button', function () {
+                var celebName = $(this)
+                    .closest("tr")
+                    .find("td")[0]
+                    .innerText;
+                deleteCelebFromServer(celebName);
+            });
+
+            var displayResources = $("#clebs-list");
+            getCelebsFromServer();
+
+            function deleteCelebFromServer(celebName) {
+                ;
+                displayResources.text("Loading data from Server...");
+                $.ajax({
+                    type: "POST",
+                    dataType: 'json',
+                    url: baseUrl + "/DeleteCelebrity", // Using our resources.json file to serve results
+                    data: "=" + celebName,
+                    success: function (result) {
+                        showData(result);
+                    }
+                });
+            }
+
+            function getCelebsFromServer(soffix) {
+                var url = baseUrl;
+                if (soffix)
+                    url += "/" + soffix;
+                displayResources.text("Loading data from Server...");
+                $.ajax({
+                    type: "GET",
+                    url: url, // Using our resources.json file to serve results
+                    contentType: "application/json",
+                    success: function (result) {
+                        showData(result);
+                    }
+                });
+            }
+
+            function showData(data) {
+                console.log(data);
+                var output =
+                    "<table ><thead><tr><th class='name' width='15%'>Name</th>"
+                    + "<th width='15%'>type</th>"
+                    + "<th width='15%'>Gender</th>"
+                    + "<th width='15%'>Birth Date</th>"
+                    + "<th  width='20%'>Picture</th>"
+                    + "<th width='15%'>Delete celeb</th></thead><tbody>";
+                for (var i in data) {
+                    var gender = data[i].IsMale ? "Male" : "Female";
+                    output +=
+                        "<tr><td>" +
+                        data[i].Name +
+                        "</td><td>" +
+                        data[i].CelebrityType +
+                        "</td><td>" +
+                        gender +
+                        "</td><td>" +
+                        data[i].BirthDate +
+                        "</td><td>" +
+                        "<img src='" +
+                        data[i].PictureUrl +
+                        "'>" +
+                        "</td><td>" +
+                        "<button type='button' class='delete-button'>Delete!</button>" +
+                        "</td></tr>";
+                }
+                output += "</tbody></table>";
+
+                displayResources.html(output);
+            }
+            // });
+        });
+    </script>
+</head>
+
+<body>
+    <div>
+        <button type='button' id='button-id'>Reset </button>
+    </div>
+
+    <div id='clebs-list'>
+
+    </div>
+</body>
+
+</html>
