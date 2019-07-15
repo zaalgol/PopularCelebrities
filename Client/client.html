@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-    <!--<link rel="stylesheet" type="text/css" href="myStyle.css" />-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
 
@@ -47,7 +47,7 @@
                 displayResources.text("Loading data from Server...");
                 $.ajax({
                     type: "GET",
-                    url: url, // Using our resources.json file to serve results
+                    url: url,
                     contentType: "application/json",
                     success: function (result) {
                         showData(result);
@@ -56,14 +56,13 @@
             }
 
             function showData(data) {
-                console.log(data);
                 var output =
                     "<table ><thead><tr><th class='name' width='15%'>Name</th>"
-                    + "<th width='15%'>type</th>"
-                    + "<th width='15%'>Gender</th>"
-                    + "<th width='15%'>Birth Date</th>"
-                    + "<th  width='20%'>Picture</th>"
-                    + "<th width='15%'>Delete celeb</th></thead><tbody>";
+                    + "<th>type</th>"
+                    + "<th>Gender</th>"
+                    + "<th>Birth Date</th>"
+                    + "<th>Picture</th>"
+                    + "<th>Delete celeb</th></thead><tbody>";
                 for (var i in data) {
                     var gender = data[i].IsMale ? "Male" : "Female";
                     output +=
@@ -93,13 +92,12 @@
 </head>
 
 <body>
-    <div>
-        <button type='button' id='button-id'>Reset </button>
-    </div>
+    <h2>MOST POPULAR CELEBRITIES IN THE WORLD</h2>
 
-    <div id='clebs-list'>
-
-    </div>
+     <button type='button' id='button-id'>Reset </button>
+ 
+    <div id='clebs-list'></div>
+    
 </body>
 
 </html>

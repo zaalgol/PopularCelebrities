@@ -1,0 +1,27 @@
+h2 {
+  text-align: center;
+  color:blueviolet;
+}
+
+table {
+	width:80%;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+td {
+	text-align: center; 
+}
+
+th {
+	width:17%;
+}
+
+#button-id {
+	margin:40px;
+}
+
+
+
